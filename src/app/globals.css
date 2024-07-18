@@ -18,12 +18,17 @@
 }
 
 body {
-  overflow: hidden;
   color: black;
   max-width: 656px;
+  height: 100%;
   margin: 0 auto;
   border-left: 1px solid #E5E5EA;
   border-right: 1px solid #E5E5EA;
+}
+/* Main Page */
+.content{
+  width: 656px;
+  height: 100%;
 }
 /*Header*/
 .main-header{
@@ -75,6 +80,8 @@ body {
 /* Main content */
 .main-block{
   /* padding: 10px 5px 10px 5px; */
+  height: 100%;
+  overflow: hidden;
 }
 .main-title{
   padding-top: 10px;
@@ -83,9 +90,12 @@ body {
   color: #666668;
 }
 .message-window{
+  content: "";
   display: flex;
-  min-height: 80vh;
-  overflow: auto;
+  max-width: 656px;
+  height: 80vh;
+  position: relative;
+  overflow-y: auto;
   flex-direction: column;
   justify-content: end;
   padding: 15px 25px;
@@ -93,6 +103,7 @@ body {
 .main-message{
   align-self: flex-end;
   margin-bottom: 10px;
+  display: block;
 }
 .message-person{
   background-color: #007AFF;

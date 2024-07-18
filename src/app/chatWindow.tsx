@@ -37,7 +37,7 @@ export default function ChatWindow(){
                     addMessage(newMessage);
                     setTimeout(() => {
                         addMessageBot('Hello world!', false)
-                    }, Math.floor(Math.random()*10000));
+                    }, 5000);
                 }
             }
             setNewMessage('');
@@ -50,7 +50,7 @@ export default function ChatWindow(){
                 addImage(imageMessage);
                 setTimeout(() => {
                     addMessageBot('Hello world!', false)
-                }, Math.floor(Math.random()*100000));
+                }, 5000);
             }
             setImage(null);
         }
